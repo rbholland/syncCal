@@ -2,7 +2,7 @@
 Sync any two calendars within the Mac Calendar app safely and on a schedule.
 
 # Steps to setup
-1. Install iCalBuddy (follow instructions [here][1])
+1. Install iCalBuddy (binary and instructions [here][1]). Alternatively, you can install iCalBuddy from [Homebrew here][2].
 2. Replace the iCalBuddy config file (located in `/Users/~USERNAME~/.icalBuddyConfig.plist`  with the file in this repo (make sure to add the `.` to the beginning of the new file so it adequately replaces the old config file). *Note: This is required for the integration with iCalBuddy to work properly.*
 3. Copy the two AppleScript files (included .scpt) to your computer somewhere (doesn’t matter, but you’ll need the paths to them next)
 4. Add the `com.rbholland.synccal_short.plist` and `com.rbholland.synccal_long.plist` files into `~/Library/LaunchAgents/`
@@ -11,7 +11,7 @@ Sync any two calendars within the Mac Calendar app safely and on a schedule.
 	2. Change the intervals at which you want them to run.
 6. Configure your calendar names in the AppleScript. You can also change the intervals for the short and long. There are two variables required for each: `destinationCalendarName`, which is the name of the calendar you want to copy events to in the Calendar app. `sourceCalendarName` is the name of the calendar you want to copy events from in the Calendar app.
 7. Load the plist files into `launchctl`. To do this, simply open a Terminal window and type the two commands: `launchctl load ~/Library/synccal_short.plist` and `launchctl load ~/Library/synccal_long.plist`
-	1. The script will immediately run 
+	1. The script will immediately run
 
 ## What does this script do?
 
@@ -33,3 +33,4 @@ In order to make sure the two plist files run on schedule, you will need to load
 They will immediately run and be loaded to run on schedule. Note: You may be prompted to give `osascript` access to your calendar or reminders.
 
 [1]:	http://hasseg.org/icalBuddy/
+[2]:	https://formulae.brew.sh/formula/ical-buddy
