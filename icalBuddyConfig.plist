@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>constantArguments</key>
+	<dict>
+		<key>bullet</key>
+		<string>•••  </string>
+		<key>alertBullet</key>
+		<string>•••  </string>
+		<key>datetimeName</key>
+		<true/>
+		<key>showUIDs</key>
+		<true/>
+		<key>propertySeparators</key>
+		<string>'--*--'</string>
+		<key>propertyOrder</key>
+		<string>title, datetime, notes, attendees</string>
+		<key>noRelativeDates</key>
+		<true/>
+		<key>noCalendarNames</key>
+		<true/>
+	</dict>
+	<key>formatting</key>
+	<dict/>
+</dict>
+</plist>
